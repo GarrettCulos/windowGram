@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 import { WindowGramBase, WgMessageBody, WgMessage } from './wgram.base';
 import { WGChannel } from './wgram.channel';
 import { UUID } from 'angular2-uuid';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 
 @Injectable()
 export class WindowGramService extends WindowGramBase {
@@ -157,7 +157,7 @@ export class WindowGramService extends WindowGramBase {
 
 		if ( this.type === 'child' ) {
 			this.initializeReloadProcess();
-		} else if( this.type === 'parent' ) {
+		} else if ( this.type === 'parent' ) {
 			delete this.children[m.sourceId];
 		}
 
@@ -169,7 +169,6 @@ export class WindowGramService extends WindowGramBase {
 	 */
 	private initializeReloadProcess() {
 
-		console.log(this.windowSettings);
 		const message = { sourceId: this.id, message: { windowSettings: this.windowSettings }, targetId: null };
 		/** how do we garantee that the postMessage is not received untill the window is refreshed */
 		setTimeout( () => {

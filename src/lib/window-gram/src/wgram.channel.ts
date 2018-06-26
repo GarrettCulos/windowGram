@@ -1,8 +1,6 @@
 import { UUID } from 'angular2-uuid';
-
 import { WindowGramBase, WgMessageBody, WgMessage } from './wgram.base';
-import { Subject } from 'rxjs/Subject';
-import { OnDestroy } from '@angular/core';
+import { Subject } from 'rxjs';
 
 export class WGChannel extends WindowGramBase {
 

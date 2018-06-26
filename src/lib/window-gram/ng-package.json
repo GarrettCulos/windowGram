@@ -1,0 +1,28 @@
+{
+  "name": "windowgram",
+  "version": "0.0.1",
+  "description": "Angular 6+ window communication module",
+  "author": {
+    "name": "Garrett Culos",
+    "email": "garrett@highwaythreesolutions.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garrettH3S/windwoGram"
+  },
+  "keywords": [
+    "angular",
+    "window",
+    "communication"
+  ],
+  "homepage": "https://github.com/garrettH3S/windwoGram",
+  "dependencies": {
+    "rxjs": "^6.0.0",
+    "angular2-uuid": "^1.1.1"
+  },
+  "peerDependencies": {
+    "@angular/core": "^6.0.0",
+    "@platform-browser":"^6.0.0"
+  }
+}
